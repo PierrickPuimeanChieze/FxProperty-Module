@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+<!-- for some information on what you could do (e.g. targets to override). -->
+<!-- If you delete this file and reopen the project it will be recreated. -->
+<project name="org.puimean.fxpropertymodule" default="netbeans" basedir=".">
+    <description>Builds, tests, and runs the project org.puimean.fxpropertymodule.</description>
+    <import file="nbproject/build-impl.xml"/>
+        <target name="-lib-path-init">
+        <echo level="debug" message="$${lib.dir} : ${lib.dir}"/>
+        <if>
+            <equals arg1="${lib.dir}" arg2="$${lib.dir}"/>
+            <then>
+                <if>
+                    <equals arg1="${build.classes.dir}" arg2="$${build.classes.dir}"/>
+                    <then>
+                        <property name="lib.dir" value="lib"/>
+                    </then>
+                    <else>
+                        <property name="lib.dir" value="jar"/>
+                    </else>
+                </if>
+            </then>
+        </if>
+        <echo level="debug" message="$${lib.dir} : ${lib.dir}"/>
+        <mkdir dir="${build.dir}/${lib.dir}"/>
+    </target>
+</project>

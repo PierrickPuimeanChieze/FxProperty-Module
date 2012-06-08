@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.puimean.fxpropertymodule
+OpenIDE-Module-Layer: org/puimean/fxpropertymodule/layer.xml
+OpenIDE-Module-Localizing-Bundle: org/puimean/fxpropertymodule/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

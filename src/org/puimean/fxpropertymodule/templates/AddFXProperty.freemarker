@@ -1,0 +1,38 @@
+    private <#if static >static </#if>${propertyType} ${name}Property;
+
+    public <#if static >static </#if> ${propertyType} ${name}Property() {
+        if (${name}Property == null) {
+            ${name}Property = new ${propertyTypeImplementation}(this, "${name}" <#if hasInitializer > , ${initializer}</#if>);
+        }
+        return ${name}Property;
+    }
+
+<#if generateGetter >
+
+<#if generateJavadoc >
+    /**
+     * Get the value of ${name}
+     *
+     * @return the value of ${name}
+     */
+</#if>
+    public <#if static >static </#if>${valueType} <#if valueType = "boolean" >is<#else>get</#if>${capitalizedName}() {
+        return ${name}Property().getValue();
+    }
+</#if>
+<#if generateSetter >
+
+<#if generateJavadoc >
+    /**
+     * Set the value of ${name}
+     *
+     * @param ${name} new value of ${name}
+     */
+</#if>
+    public <#if static >static </#if>void set${capitalizedName}(${valueType} ${name}) {
+        <#if static >${className}.<#else>this.</#if>${name}Property.setValue(${name});
+    }
+</#if>
+
+
+

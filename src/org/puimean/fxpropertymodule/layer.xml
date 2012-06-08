@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN" "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Editors">
+        <folder name="text">
+            <folder name="x-java">
+                <folder name="CodeGenerators">
+                    <file name="org-puimean-fxpropertymodule-AddFXPropertyCodeGenerator$Factory.instance">
+                        <attr name="name" stringvalue="org-puimean-fxpropertymodule-AddFXPropertyCodeGenerator$Factory"/>
+                    </file>
+                </folder>
+            </folder>
+        </folder>
+    </folder>
+    
+    <folder name="org.puimean.fxpropertymodule">
+
+        <file name="AddFXProperty.freemarker" url="templates/AddFXProperty.freemarker">
+
+            <attr name="template" boolvalue="true"/>
+
+            <attr name="SystemFileSystem.localizingBundle" stringvalue="org.puimean.fxpropertymodule.Bundle"/>
+
+        </file>
+
+    </folder>
+
+
+</filesystem>
