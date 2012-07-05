@@ -30,7 +30,7 @@
      */
 </#if>
     public <#if static >static </#if>void set${capitalizedName}(${valueType} ${name}) {
-        <#if static >${className}.<#else>this.</#if>${name}Property.setValue(${name});
+        <#if static >${className}.<#else>this.</#if>${name}Property().setValue(${name});
     }
 </#if>
 
